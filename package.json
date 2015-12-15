@@ -41,7 +41,11 @@
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.5"
+    "chalk": "^1.1.1",
+    "ember-cli-babel": "^5.1.5",
+    "json-file": "^0.1.0",
+    "lodash": "^3.10.1",
+    "rsvp": "^3.1.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

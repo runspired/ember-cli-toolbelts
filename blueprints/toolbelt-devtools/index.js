@@ -4,11 +4,14 @@ var installToolbelt = require('../../lib/install-toolbelt');
 module.exports = {
   description: 'Developer Tools',
 
+  normalizeEntityName: function() {},
+
   afterInstall: function(options) {
-    return installToolbelt([
+    return installToolbelt.bind(this)([
       {
         name: 'Dependency Management',
-        description: 'Allows you to check for outdated, incorrect, and unused dependencies via the `npm-check` command.',
+        description: "Allows you to check for outdated, incorrect, and unused dependencies via the `npm-check` command." +
+        "\nAllows you to programmatically fix deprecation warnings in your app.",
         packages: ['npm-check', 'ember-watson']
       },
       {
