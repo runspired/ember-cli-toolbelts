@@ -45,6 +45,7 @@
     "ember-cli-babel": "^5.1.5",
     "json-file": "^0.1.0",
     "lodash": "^3.10.1",
+    "pleasant-progress": "^1.1.0",
     "rsvp": "^3.1.0"
   },
   "ember-addon": {
