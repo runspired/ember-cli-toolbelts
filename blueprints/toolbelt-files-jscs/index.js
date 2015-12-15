@@ -1,0 +1,18 @@
+/*jshint node:true*/
+var updatePackage = require('../../lib/update-package');
+
+module.exports = {
+  description: "Install's jscs configuration",
+
+  afterInstall: function(options) {
+    updatePackage(this, {
+      "scripts": {
+        "suave": "jscs addon app tests --fix"
+      },
+      "ghooks": {
+        "pre-commit": "PATH=$PATH:/usr/local/bin:/usr/local/sbin && npm run suave",
+        "pre-push": "PATH=$PATH:/usr/local/bin:/usr/local/sbin && npm run suave"
+      }
+    });
+  }
+};
