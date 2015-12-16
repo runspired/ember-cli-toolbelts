@@ -12,7 +12,8 @@ module.exports = {
         name: 'Dependency Management',
         description: "Allows you to check for outdated, incorrect, and unused dependencies via the `npm-check` command." +
         "\nAllows you to programmatically fix deprecation warnings in your app.",
-        packages: ['npm-check', 'ember-watson']
+        packages: ['npm-check'],
+        addons: ['ember-watson']
       },
       {
         name: 'eslint',
