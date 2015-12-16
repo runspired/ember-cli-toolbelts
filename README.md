@@ -1,5 +1,7 @@
 # Ember-cli-toolbelts
 
+[![Build Status](https://travis-ci.org/undefined/ember-cli-toolbelts.svg)](https://travis-ci.org/undefined/ember-cli-toolbelts)
+
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation

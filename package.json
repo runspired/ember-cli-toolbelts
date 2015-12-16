@@ -11,9 +11,9 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/runspired/ember-cli-toolbelts.git",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4.1.1"
   },
   "author": "",
   "license": "MIT",
@@ -43,10 +43,12 @@
   "dependencies": {
     "chalk": "^1.1.1",
     "ember-cli-babel": "^5.1.5",
-    "json-file": "^0.1.0",
+    "jsonfile": "^2.2.3",
     "lodash": "^3.10.1",
+    "object-assign": "^4.0.1",
     "pleasant-progress": "^1.1.0",
-    "rsvp": "^3.1.0"
+    "rsvp": "^3.1.0",
+    "valid-url": "^1.0.9"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
