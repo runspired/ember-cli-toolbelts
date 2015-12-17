@@ -8,6 +8,10 @@ var commands = require('./lib/commands');
 module.exports = {
   name: 'ember-cli-toolbelts',
 
+  isDevelopingAddon: function() {
+    return false;
+  },
+
   config: function () {
     var configPath = path.join(this.root, 'config', 'ember-cli-toolbelts.json');
 

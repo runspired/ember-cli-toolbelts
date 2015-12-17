@@ -26,6 +26,7 @@ module.exports = toolbelt({
           {
             name: 'Defaults',
             description: "You should always keep this updated.",
+            addons: ['ember-cli-release'],
             dependencies: ['ember-cli-babel']
           },
           {

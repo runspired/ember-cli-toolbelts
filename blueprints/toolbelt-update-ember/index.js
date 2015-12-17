@@ -14,7 +14,7 @@ module.exports = toolbelt({
           'ember-resolver',
           'ember-cli-test-loader',
           'ember-cli-shims',
-          'ember-cli/loader.js',
+          'loader.js',
           'ember-load-initializers'
         ]
       },
@@ -22,33 +22,35 @@ module.exports = toolbelt({
         name: 'Ember CLI',
         description: "Bump Ember-Cli",
         packages: [
-          'ember-cli',
+          // 'ember-cli', (this causes a problem as it updates while running)
+          // 'broccoli-asset-rev',
           'ember-cli-toolbelts',
-          'broccoli-asset-rev',
+          'ember-cli-release',
           'ember-cli-app-version',
           'ember-cli-content-security-policy',
           'ember-cli-dependency-checker',
           'ember-cli-htmlbars',
           'ember-cli-inject-live-reload',
-          'ember-cli-release',
-          'ember-cli-sri',
           'ember-cli-uglify',
+          'ember-try'
+        ]
+      },
+      {
+        name: 'Ember Cruft',
+        description: 'Bump Default Ember Addons',
+        addons: [
+          'ember-cli-sri',
+          'ember-ajax',
           'ember-disable-proxy-controllers',
           'ember-export-application-global',
-          'ember-disable-prototype-extensions',
-          'ember-try'
-          //ember-cli-babel
+          'ember-disable-prototype-extensions'
         ]
       },
       {
         name: 'Ember Data',
         description: "Bump Ember-Data",
-        packages: [
-          'ember-data'
-        ],
-        bowerPackages: [
-          'ember-data'
-        ]
+        packages: ['ember-data'],
+        bowerPackages: ['ember-data']
       },
       {
         name: 'Ember Qunit',
