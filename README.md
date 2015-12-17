@@ -2,29 +2,44 @@
 
 [![npm version](https://badge.fury.io/js/ember-cli-toolbelts.svg)](http://badge.fury.io/js/ember-cli-toolbelts)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-toolbelts.svg)](http://emberobserver.com/addons/ember-cli-toolbelts)
-[![Build Status](https://travis-ci.org/runspired/ember-cli-toolbelts.svg)](https://travis-ci.org/runspired/ember-cli-toolbelts)
 
-This README outlines the details of collaborating on this Ember addon.
+Toolbelts are specialized blueprints that help you maintain your dependencies or build a specific feature set faster.
 
-## Installation
+## Using Toolbelts
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+To run a toolbelt, use the toolbelt command.
 
-## Running
+Example: `ember toolbelt travis`
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Available Toolbelts
 
-## Running Tests
+- addon-dev
+- devtools
+- mobile
+- performance
+- travis
+- update-ember
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+## Submitting new Toolbelts
 
-## Building
+If you've built a toolbelt that you find particularly useful, please consider a PR to add it here.
 
-* `ember build`
+### Create a new Toolbelt
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+`ember g toolbelt <foo>`
+
+This will create a new toolbelt blueprint with the name `toolbelt-<foo>`.
+
+In addition to typical blueprint helpers, toolbelts have the following methods available to them.
+
+- readPackage
+- installToolbelt
+- getRepository
+- updateOptions
+- updateReadMe
+- addDependencyToProject
+- addDependenciesToProject
+- removeDependencyFromProject
+- removeDependenciesFromProject
+
+Browse existing toolbelts to see some of what they can do.
