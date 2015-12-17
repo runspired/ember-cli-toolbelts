@@ -10,7 +10,7 @@ module.exports = toolbelt({
     return this.getRepository()
       .then(function(repo) {
         var promises = [];
-        var repoPath = repo.org + '/' + repo.project;
+        var repoPath = repo.organization + '/' + repo.project;
 
         promises.push(
           this.updateOptions({
@@ -27,7 +27,7 @@ module.exports = toolbelt({
           }));
 
         promises.push(
-          this.updateReadMe([
+          this.updateReadMe('Adds Travis `Build Status` badge', [
             {
               offset: 2,
               lines: [

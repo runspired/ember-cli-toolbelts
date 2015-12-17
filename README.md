@@ -1,6 +1,8 @@
 # Ember-cli-toolbelts
 
-[![Build Status](https://travis-ci.org/undefined/ember-cli-toolbelts.svg)](https://travis-ci.org/undefined/ember-cli-toolbelts)
+[![npm version](https://badge.fury.io/js/ember-cli-toolbelts.svg)](http://badge.fury.io/js/ember-cli-toolbelts)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-cli-toolbelts.svg)](http://emberobserver.com/addons/ember-cli-toolbelts)
+[![Build Status](https://travis-ci.org/runspired/ember-cli-toolbelts.svg)](https://travis-ci.org/runspired/ember-cli-toolbelts)
 
 This README outlines the details of collaborating on this Ember addon.
 
