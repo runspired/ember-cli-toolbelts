@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-toolbelts",
   "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Specialized blueprints for maintaining and iterating faster",
   "directories": {
     "doc": "doc",
     "test": "tests"

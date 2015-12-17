@@ -3,6 +3,8 @@
 # compiled output
 /dist
 /tmp
+.idea
+.DS_Store
 
 # dependencies
 /node_modules
