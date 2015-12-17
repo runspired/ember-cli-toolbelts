@@ -1,11 +1,11 @@
 /*jshint node:true*/
-var updatePackage = require('../../lib/update-package');
+var toolbelt = require('../../lib/toolbelt');
 
-module.exports = {
+module.exports = toolbelt({
   description: "Install's eslint configuration",
 
-  afterInstall: function(options) {
-    updatePackage(this, {
+  afterInstall: function() {
+    this.updatePackage({
       "scripts": {
         "lint": "eslint -c .eslintrc addon/",
         "lint-all": "eslint -c .eslintrc app/ addon/ tests/",
@@ -17,4 +17,4 @@ module.exports = {
       }
     });
   }
-};
+});

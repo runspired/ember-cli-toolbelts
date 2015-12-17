@@ -1,13 +1,11 @@
 /*jshint node:true*/
-var installToolbelt = require('../../lib/install-toolbelt');
+var toolbelt = require('../../lib/toolbelt');
 
-module.exports = {
+module.exports = toolbelt({
   description: 'Bump Ember dependencies to their latest versions.',
 
-  normalizeEntityName: function() {},
-
-  afterInstall: function(options) {
-    return installToolbelt.bind(this)([
+  afterInstall: function() {
+    return this.installToolbelt([
       {
         name: 'Ember',
         description: "Bump Ember",
@@ -67,4 +65,4 @@ module.exports = {
       }
     ]);
   }
-};
+});

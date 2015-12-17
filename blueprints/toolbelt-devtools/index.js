@@ -1,13 +1,11 @@
 /*jshint node:true*/
-var installToolbelt = require('../../lib/install-toolbelt');
+var toolbelt = require('../../lib/toolbelt');
 
-module.exports = {
+module.exports = toolbelt({
   description: 'Developer Tools',
 
-  normalizeEntityName: function() {},
-
   afterInstall: function(options) {
-    return installToolbelt.bind(this)([
+    return this.installToolbelt([
       {
         name: 'Dependency Management',
         description: "Allows you to check for outdated, incorrect, and unused dependencies via the `npm-check` command." +
@@ -37,4 +35,4 @@ module.exports = {
       }
     ]);
   }
-};
+});

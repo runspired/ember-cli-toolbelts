@@ -1,13 +1,11 @@
 /*jshint node:true*/
-var installToolbelt = require('../../lib/install-toolbelt');
+var toolbelt = require('../../lib/toolbelt');
 
-module.exports = {
+module.exports = toolbelt({
   description: 'Installs Addons For Mobile Support',
 
-  normalizeEntityName: function() {},
-
   afterInstall: function(options) {
-    return installToolbelt.bind(this)([
+    return this.installToolbelt([
       {
         name: 'Touch Input',
         description: "nuh, nuh, nuh, nuh",
@@ -21,4 +19,4 @@ module.exports = {
       }
     ]);
   }
-};
+});

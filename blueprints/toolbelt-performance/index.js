@@ -1,13 +1,12 @@
 /*jshint node:true*/
-var installToolbelt = require('../../lib/install-toolbelt');
 
-module.exports = {
+var toolbelt = require('../../lib/toolbelt');
+
+module.exports = toolbelt({
   description: 'Installs Addons For Improving the Performance of Your Application',
 
-  normalizeEntityName: function() {},
-
-  afterInstall: function(options) {
-    return installToolbelt.bind(this)([
+  afterInstall: function() {
+    return this.installToolbelt([
       {
         name: 'Performance',
         description: "All the Frames",
@@ -21,4 +20,4 @@ module.exports = {
       }
     ]);
   }
-};
+});

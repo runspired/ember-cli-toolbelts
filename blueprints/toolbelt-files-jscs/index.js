@@ -1,11 +1,11 @@
 /*jshint node:true*/
-var updatePackage = require('../../lib/update-package');
+var toolbelt = require('../../lib/toolbelt');
 
-module.exports = {
+module.exports = toolbelt({
   description: "Install's jscs configuration",
 
-  afterInstall: function(options) {
-    updatePackage(this, {
+  afterInstall: function() {
+    this.updatePackage({
       "scripts": {
         "suave": "jscs addon app tests --fix"
       },
@@ -15,4 +15,4 @@ module.exports = {
       }
     });
   }
-};
+});
