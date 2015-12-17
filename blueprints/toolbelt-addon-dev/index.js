@@ -25,29 +25,23 @@ module.exports = toolbelt({
         return _this.installToolbelt([
           {
             name: 'Defaults',
-            description: "",
+            description: "You should always keep this updated.",
             dependencies: ['ember-cli-babel']
           },
           {
             name: 'Templates',
-            description: "",
+            description: "Run this if your addon provides .hbs files.",
             dependencies: ['ember-cli-htmlbars']
           },
           {
             name: 'Legacy Polyfills',
-            description: "",
-            packages: [],
-            bowerPackages: [],
-            addons: ['ember-getowner-polyfill'],
-            blueprint: ''
+            description: "A good addon supports older version of Ember too. These polyfills help you do that.",
+            addons: ['ember-getowner-polyfill']
           },
           {
             name: 'Demo App Helpers',
-            description: "",
-            packages: [],
-            bowerPackages: [],
-            addons: ['ember-code-snippet'],
-            blueprint: ''
+            description: "A good addon has good docs. These help you build those.",
+            addons: ['ember-code-snippet']
           }
         ]);
         });
