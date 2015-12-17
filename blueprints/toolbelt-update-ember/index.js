@@ -23,7 +23,7 @@ module.exports = toolbelt({
         description: "Bump Ember-Cli",
         packages: [
           'ember-cli',
-          //'ember-cli-toolbelts',
+          'ember-cli-toolbelts',
           'broccoli-asset-rev',
           'ember-cli-app-version',
           'ember-cli-content-security-policy',
@@ -38,8 +38,7 @@ module.exports = toolbelt({
           'ember-disable-prototype-extensions',
           'ember-try'
           //ember-cli-babel
-        ],
-        bowerPackages: ['ember', 'ember-data']
+        ]
       },
       {
         name: 'Ember Data',
