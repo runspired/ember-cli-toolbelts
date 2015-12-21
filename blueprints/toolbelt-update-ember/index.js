@@ -8,14 +8,19 @@ module.exports = toolbelt({
     return this.installToolbelt([
       {
         name: 'Ember',
-        description: "Bump Ember",
+        description: "Bump Ember. If you get an errors after running this, often this is because " +
+          "ember-cli-shims is ahead of your dependencies.  If you have ember-resolver as a bower" +
+          " dependency instead of as an npm dependency, remove the bower dependency and change the " +
+          " imports that use it from `import Resolver from 'ember/resolver';` to `import Resolver from 'ember-resolver';`",
         bowerPackages: [
           'ember',
-          'ember-resolver',
           'ember-cli-test-loader',
-          // 'ember-cli-shims',
+          'ember-cli-shims',
           'loader.js',
           'ember-load-initializers'
+        ],
+        packages: [
+          'ember-resolver'
         ]
       },
       {
