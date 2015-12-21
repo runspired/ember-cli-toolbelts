@@ -13,7 +13,7 @@ module.exports = toolbelt({
           'ember',
           'ember-resolver',
           'ember-cli-test-loader',
-          'ember-cli-shims',
+          // 'ember-cli-shims',
           'loader.js',
           'ember-load-initializers'
         ]
