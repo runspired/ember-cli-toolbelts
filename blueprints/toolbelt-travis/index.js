@@ -6,8 +6,8 @@ var toolbelt = require('../../lib/toolbelt');
 module.exports = toolbelt({
   description: 'Keeps Travis and PhantomJS Happy',
 
-  normalizeEntityName: function(name) {
-    return name;
+  normalizeEntityName: function() {
+    return 'toolbelt-travis';
   },
 
   afterInstall: function() {

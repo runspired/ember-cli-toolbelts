@@ -6,8 +6,8 @@ var toolbelt = require('../../lib/toolbelt');
 module.exports = toolbelt({
   description: '',
 
-  normalizeEntityName: function(name) {
-    return name;
+  normalizeEntityName: function() {
+    return 'toolbelt-addon-dev';
   },
 
   afterInstall: function(options) {
