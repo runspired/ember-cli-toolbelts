@@ -5,12 +5,12 @@ dist/
 .idea
 .DS_Store
 
-.bowerrc
-.editorconfig
-.ember-cli
-.travis.yml
-.npmignore
+/.bowerrc
+/.editorconfig
+/.ember-cli
+/.travis.yml
+/.npmignore
 **/.gitkeep
-bower.json
-Brocfile.js
-testem.json
+/bower.json
+/Brocfile.js
+/testem.json
