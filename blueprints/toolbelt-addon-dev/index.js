@@ -6,6 +6,10 @@ var toolbelt = require('../../lib/toolbelt');
 module.exports = toolbelt({
   description: '',
 
+  normalizeEntityName: function(name) {
+    return name;
+  },
+
   afterInstall: function(options) {
     var _this = this;
 
