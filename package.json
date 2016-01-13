@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-toolbelts",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Specialized blueprints for maintaining and iterating faster",
   "directories": {
     "doc": "doc",
@@ -19,7 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "ember-cli": "1.13.12",
-    "ember-cli-changelog": "0.3.0",
+    "ember-cli-changelog": "0.3.3",
     "ember-cli-release": "0.2.8"
   },
   "keywords": [
