@@ -19,7 +19,8 @@
   "license": "MIT",
   "devDependencies": {
     "ember-cli": "1.13.12",
-    "ember-cli-release": "^0.2.8"
+    "ember-cli-changelog": "0.3.0",
+    "ember-cli-release": "0.2.8"
   },
   "keywords": [
     "ember-addon"
