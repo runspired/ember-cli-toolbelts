@@ -1,6 +1,16 @@
 Changelog
 =========
 
+## 0.3.2
+
+### Pull Requests
+
+
+#### Commits
+
+- [9202e865](https://github.com/runspired/ember-cli-toolbelts/commit/9202e8651c0fd5b52e2e8f695d02fcc3b55bab0e) **feat(circle-badges)**: toolbelt will now add badges for circle-ci setups *by [Chris Thoburn](https://github.com/runspired)*
+- [0b4fc906](https://github.com/runspired/ember-cli-toolbelts/commit/0b4fc906490e377bb5ffce884aa437e3d4cb0bf5) **feat(circle-badge)**: improves circle-ci badge styling *by [Chris Thoburn](https://github.com/runspired)*
+
 ## 0.3.1
 
 ### Pull Requests
