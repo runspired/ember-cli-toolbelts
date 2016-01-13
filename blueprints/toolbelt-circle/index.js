@@ -36,7 +36,7 @@ module.exports = toolbelt({
               name: 'token'
             }])
             .then(function(response) {
-              this.updateReadMe('Adds Circle `Build Status` badges', [
+              return this.updateReadMe('Adds Circle `Build Status` badges', [
                 {
                   offset: 2,
                   lines: [
@@ -60,16 +60,16 @@ function makeBadge(project, branch, token) {
   var badgeUrl = makeBadgeUrl(project, trimBranch, token);
   var circleUrl = makeCircleUrl(project);
 
-  return (branch || 'Default') + ' [![Build Status](' + badgeUrl + ')](' + circleUrl + ')';
+  return '**' + (branch || 'Default') + '** [![Build Status](' + badgeUrl + ')](' + circleUrl + ')';
 }
 
 // https://circleci.com/gh/:owner/:repo.svg?style=shield&circle-token=:circle-token
 // https://circleci.com/gh/:owner/:repo/tree/:branch.png?style=shield&circle-token=:circle-token
 function makeBadgeUrl(project, branch, token) {
   var root = 'https://circleci.com/gh';
-  var branchPath = branch ? branch + '.png?' : '.svg?';
-  var tokenPath = 'style=shield&circle-token=' + token;
-  return [root, project.organization, project.project, branchPath + tokenPath].join('/');
+  branch = branch || '';
+  var tokenPath = '.svg?style=shield&circle-token=' + token;
+  return [root, project.organization, project.project, branch + tokenPath].join('/');
 }
 
 function makeCircleUrl(project) {
