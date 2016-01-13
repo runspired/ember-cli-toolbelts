@@ -7,7 +7,7 @@ module.exports = toolbelt({
   description: 'Installs addons for animation and transitions.',
 
   afterInstall: function(options) {
-    this.installToolbelt([
+    return this.installToolbelt([
       {
         name: 'Liquid-Fire',
         description: "Installs liquid-fire and recommended liquid-fire addons",

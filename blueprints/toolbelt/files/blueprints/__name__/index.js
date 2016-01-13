@@ -7,7 +7,7 @@ module.exports = toolbelt({
   description: '',
 
   afterInstall: function(options) {
-    this.installToolbelt([
+    return this.installToolbelt([
       /*
        {
        name: '',
