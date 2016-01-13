@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-toolbelts",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "Specialized blueprints for maintaining and iterating faster",
   "directories": {
     "doc": "doc",
