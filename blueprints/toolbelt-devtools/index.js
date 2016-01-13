@@ -29,7 +29,7 @@ module.exports = toolbelt({
       },
       {
         name: 'Performance Monitoring',
-        description: 'Installs and configures jscs rules via ember-suave, auto-generated tests, and pre-commit hooks.',
+        description: 'Installs and configures addons for helping you monitor app performance',
         addons: ['ember-perf', 'ember-browsery-stats', 'ember-cli-dom-stats', 'ember-cli-remote-inspector']
       }
     ]);

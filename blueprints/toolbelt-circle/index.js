@@ -67,9 +67,15 @@ function makeBadge(project, branch, token) {
 // https://circleci.com/gh/:owner/:repo/tree/:branch.png?style=shield&circle-token=:circle-token
 function makeBadgeUrl(project, branch, token) {
   var root = 'https://circleci.com/gh';
-  branch = branch || '';
   var tokenPath = '.svg?style=shield&circle-token=' + token;
-  return [root, project.organization, project.project, branch + tokenPath].join('/');
+  var project = project.project;
+  branch = branch ? 'tree/' + branch + tokenPath : '';
+  if (!branch) {
+    project += tokenPath;
+  } else {
+    project += '/' + branch;
+  }
+  return [root, project.organization, project].join('/');
 }
 
 function makeCircleUrl(project) {
