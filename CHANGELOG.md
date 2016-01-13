@@ -1,6 +1,13 @@
 Changelog
 =========
 
+## 0.3.3
+
+#### Commits
+
+- [210c6846](https://github.com/runspired/ember-cli-toolbelts/commit/210c68462c63f93173da89f1ca69ff16c9667b39) **fix(toolbelt-install)**: afterInstall must return a promise *by [Chris Thoburn](https://github.com/runspired)*
+- [255a6818](https://github.com/runspired/ember-cli-toolbelts/commit/255a6818165a47e2e921bf02682a182527a34188) **fix(badges&text)**: cleans up circle badge install, cleans up text for performance monitoring install *by [Chris Thoburn](https://github.com/runspired)*
+
 ## 0.3.2
 
 ### Pull Requests
